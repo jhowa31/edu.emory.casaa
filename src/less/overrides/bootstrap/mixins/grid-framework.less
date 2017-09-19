@@ -1,0 +1,25 @@
+// Override to add aditional classes for extended grid system col-exs and col-xl
+
+.make-grid-columns() {
+    // Common styles for all sizes of grid columns, widths 1-12
+    .col(@index) { // initial
+      @item: ~".col-xs-@{index}, .col-exs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}, .col-xl-@{index}";
+      .col((@index + 1), @item);
+    }
+    .col(@index, @list) when (@index =< @grid-columns) { // general; "=<" isn't a typo
+      @item: ~".col-xs-@{index},  .col-exs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}, .col-xl-@{index}";
+      .col((@index + 1), ~"@{list}, @{item}");
+    }
+    .col(@index, @list) when (@index > @grid-columns) { // terminal
+      @{list} {
+        position: relative;
+        // Prevent columns from collapsing when empty
+        min-height: 1px;
+        // Inner gutter via padding
+        padding-left:  ceil((@grid-gutter-width / 2));
+        padding-right: floor((@grid-gutter-width / 2));
+      }
+    }
+    .col(1); // kickstart it
+  }
+  

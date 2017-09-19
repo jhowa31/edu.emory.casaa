@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# default build directory
+build/
+
+#MacOS X
+.DS_Store

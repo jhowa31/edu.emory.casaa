@@ -1,0 +1,59 @@
+// Additional Breakpoint for ultra wide desktops
+
+// Extra small screen / phones (large
+@container-exs-size:      (@sm-size - @grid-gutter-width);
+//** For `@screen-exs-min` and up.
+@container-exs:                 @container-exs-size;
+
+
+// Extra Large screen / wide desktop
+@container-ul-size:      (@ul-size - @grid-gutter-width);
+//** For `@screen-ul-min` and up.
+@container-ul:                 @container-ul-size;
+
+// Additional container
+.container {
+    .container-fixed();
+
+    
+    @media (min-width: @sm-size) and (max-width: @screen-xs-max) {
+        width: @container-exs;
+    }
+    @media (min-width: @ul-size) {
+        width: @container-ul;
+    }
+}
+
+// REQUIRED MAX WIDTH FOR ADDITIONAL SIZE
+@media (min-width: @sm-size) and (max-width: @screen-xs-max) {
+    .make-grid(exs);
+}
+
+@media (min-width: @ul-size) {
+    .make-grid(xl);
+}
+
+.no-gutters() {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.no-gutter {
+    &.container {
+        .no-gutters();
+        &>.row {
+            .no-gutters();
+            & > [class~="col-"] {
+                .no-gutters();
+            }
+        }
+    }
+    &.row {
+        .no-gutters();
+        & > [class~="col-"] {
+            .no-gutters();
+        }
+    }
+}

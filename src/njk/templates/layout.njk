@@ -1,0 +1,20 @@
+{% set siteName = "EMORY FRAMEWORK" %}
+{% set includePath = "../_includes/" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "partials/meta.njk" %}
+    {% block head %}{% endblock %}
+    {% include "partials/head.njk" %}
+</head>
+
+<body>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+    {% include "partials/header.njk" %}
+    {% block content %}{% endblock %}
+    {% include "partials/footer.njk" %}
+    {% include "partials/js.njk" %}
+</body>
+
+</html>

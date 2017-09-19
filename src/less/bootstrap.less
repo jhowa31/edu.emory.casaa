@@ -1,0 +1,64 @@
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/* Build */
+@bootstrapLibPath : "../_libraries/bootstrap-3.3.7/less/";
+@import "globals/variables.less";
+
+
+// Core variables and mixins
+@import "globals/bootstrap.variables.less";
+@import "@{bootstrapLibPath}mixins.less";
+@import "overrides/bootstrap/mixins.less";
+
+// Reset and dependencies
+@import "@{bootstrapLibPath}normalize.less";
+@import "@{bootstrapLibPath}print.less";
+@import "@{bootstrapLibPath}glyphicons.less";
+
+// Core CSS
+@import "@{bootstrapLibPath}scaffolding.less";
+@import "@{bootstrapLibPath}type.less";
+@import "@{bootstrapLibPath}code.less";
+@import "@{bootstrapLibPath}grid.less";
+//Grid Override
+@import "overrides/bootstrap/grid.less";
+@import "@{bootstrapLibPath}tables.less";
+@import "@{bootstrapLibPath}forms.less";
+@import "@{bootstrapLibPath}buttons.less";
+
+// Components
+@import "@{bootstrapLibPath}component-animations.less";
+@import "@{bootstrapLibPath}dropdowns.less";
+@import "@{bootstrapLibPath}button-groups.less";
+@import "@{bootstrapLibPath}input-groups.less";
+@import "@{bootstrapLibPath}navs.less";
+@import "@{bootstrapLibPath}navbar.less";
+@import "@{bootstrapLibPath}breadcrumbs.less";
+@import "@{bootstrapLibPath}pagination.less";
+@import "@{bootstrapLibPath}pager.less";
+@import "@{bootstrapLibPath}labels.less";
+@import "@{bootstrapLibPath}badges.less";
+@import "@{bootstrapLibPath}jumbotron.less";
+@import "@{bootstrapLibPath}thumbnails.less";
+@import "@{bootstrapLibPath}alerts.less";
+@import "@{bootstrapLibPath}progress-bars.less";
+@import "@{bootstrapLibPath}media.less";
+@import "@{bootstrapLibPath}list-group.less";
+@import "@{bootstrapLibPath}panels.less";
+@import "@{bootstrapLibPath}responsive-embed.less";
+@import "@{bootstrapLibPath}wells.less";
+@import "@{bootstrapLibPath}close.less";
+
+// Components w/ JavaScript
+@import "@{bootstrapLibPath}modals.less";
+@import "@{bootstrapLibPath}tooltip.less";
+@import "@{bootstrapLibPath}popovers.less";
+@import "@{bootstrapLibPath}carousel.less";
+
+// Utility classes
+@import "@{bootstrapLibPath}utilities.less";
+@import "@{bootstrapLibPath}responsive-utilities.less";
