@@ -10,7 +10,12 @@
 // Core variables and mixins
 
 @import "../_libraries/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/variables";
+// Override defaults as needed
+@import "globals/bootstrap-3.3.7-variables";
+
 @import "../_libraries/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins";
+// Override mixins as required
+@import "overrides/bootstrap-3.3.7/mixins";
 
 // Reset and dependencies
 @import "../_libraries/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/normalize";
@@ -22,6 +27,8 @@
 @import "../_libraries/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/type";
 @import "../_libraries/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/code";
 @import "../_libraries/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/grid";
+// Add to Core As need
+@import "overrides/bootstrap-3.3.7/grid";
 @import "../_libraries/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/tables";
 @import "../_libraries/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/forms";
 @import "../_libraries/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/buttons";

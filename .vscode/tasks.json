@@ -1,11 +1,17 @@
 {
-    "version": "0.1.0",
+    "version": "0.2.0",
     "command": "gulp",
     "isShellCommand": true,
     "tasks": [
         {
             "taskName": "build",
             "isBuildCommand": true,
+            "showOutput": "always",
+            "isBackground": false
+        },
+        {
+            "taskName": "watch:serve",
+            "isBuildCommand": false,
             "showOutput": "always",
             "isBackground": false
         }
