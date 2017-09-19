@@ -20,7 +20,7 @@
     "html" : {
         "suffix" : "", 
         "source": "./src/njk/pages/**/*.+(njk)",
-        "templates": "./src/njk/pages/templates",  
+        "templates": "./src/njk/templates",  
         "build" : "./build/pages", 
         "templateEngine" : "njk",
         "extension": ".html",
