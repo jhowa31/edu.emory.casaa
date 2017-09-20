@@ -165,15 +165,23 @@ gulp.task('serve:reload',  function reload(done) {
     done();
 });
 
-
-
+buildtasks.forEach(function(taskName){
+  gulp.task('serve:reload:'+ taskName, [taskName], function(done){
+    browserSync.reload();
+    done();
+  })
+});
 
 gulp.task('watch:build', ['build'], function(){
-  gulp.watch(normalizePath(getConfig().css.source), ['build:css', 'serve:reload']).on('change', logFileChange);
-  gulp.watch(normalizePath(getConfig().js.source), ['build:js', 'serve:reload']).on('change', logFileChange);
-  gulp.watch(normalizePath(getConfig().html.source), ['build:html', 'serve:reload']).on('change', logFileChange);
+  gulp.watch(normalizePath(getConfig().css.source), ['serve:reload:build:css']).on('change', logFileChange);
+  gulp.watch(normalizePath(getConfig().js.source), ['serve:reload:build:js']).on('change', logFileChange);
+  gulp.watch(normalizePath(getConfig().html.source), ['serve:reload:build:html']).on('change', logFileChange);
+  if(getConfig().html.templateEngine != false && getConfig().html.templates != ''){
+    gulp.watch(normalizePath(getConfig().html.templates + '/**/*.*'), ['serve:reload:build:html']).on('change', logFileChange);
+  }
+
   getConfig().static.forEach(function(staticResource){
-    gulp.watch(normalizePath(staticResource.source), ['build:'+ staticResource.task, 'serve:reload']).on('change', logFileChange);
+    gulp.watch(normalizePath(staticResource.source), ['serve:reload:build:'+ staticResource.task]).on('change', logFileChange);
   });
 });
 
