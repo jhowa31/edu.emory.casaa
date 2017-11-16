@@ -3,12 +3,14 @@
 <title>Homepage | {{ siteName }}</title>
 {% endblock %} 
 {% block content %}
+<div id="header-gradient"></div>
 <div class="container-fluid" id="main-content" tabindex="-1">
       <!-- The main page content -->
       <div class="homepage-opener">
             {% include "partials/homepage-header-options/homepage-opener-full-width-image.njk" %}
             {% include "partials/homepage-header-options/homepage-opener-carousel-full-width-image.njk" %}
             {% include "partials/homepage-header-options/homepage-opener-carousel-small-image.njk" %}
+            {% include "partials/homepage-header-options/homepage-opener-abstract-and-image.njk" %}
       </div>
 </div>
 {% endblock %}
