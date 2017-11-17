@@ -2,13 +2,8 @@
 .navbar-campus-life {
     padding-top: 30px;
 }
-.navbar-campus-life.bg-light {
-    background-color: transparent !important;
-}
-.bg-light {
-    background-color: transparent !important;
-}
-.navbar-expand-lg .navbar-nav .nav-link {
+
+.navbar-nav .nav-link {
     color: white;
     margin-right: 20px;
     font-size: 18px;
@@ -18,11 +13,40 @@
         font-size: 16px;
     }
 }
-.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+.navbar-nav .nav-link.active {
     color: white;
 }
 
+.nav-link {
+    color: white !important;
+}
+.active .nav-link {
+    border-bottom: 1px solid white;
+}
 
+.navbar-toggler {
+    background: white;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(124,124,124, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-campus-life {
+    @media only screen and (max-width : 991px) {
+        background-color: rgb(26,31,44) !important;
+        background-color: rgba(26,31,44,.8) !important;
+    }
+    .navbar-brand {
+        img {
+            @media only screen and (min-width : 480px) and (max-width : 991px) {
+                max-width: 330px;
+            }
+            @media only screen and (min-width : 320px) and (max-width : 479px) {
+                max-width: 216px;
+            }
+        }
+        
+    }
+}
 
 
 
@@ -43,8 +67,8 @@
 }
 
 .scrolling {
-    background-color: rgb(26,31,44);
-    background-color: rgba(26,31,44,.8);
+    background-color: rgb(26,31,44) !important;
+    background-color: rgba(26,31,44,.8) !important;
     padding-top: 30px;
     padding-bottom: 10px;
 }
@@ -86,4 +110,87 @@
         margin-top: -89%;
     }
 }
+.homepage-opener {
+    position: relative;
+    .opener-text {
+        position: absolute;
+        top: 40%;
+        h1 {
+            font-family: 'PT Sans Narrow', sans-serif;
+            color: white;
+            text-transform: uppercase;
+            font-size: 80px;
+            letter-spacing: 10px;
+            margin-bottom: 30px;
+        }
+        .opener-lead {
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 500;
+            letter-spacing: 5px;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: $orange;
+            border-radius: 0;
+            border-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            &:after {
+                content: "\2192";
+                margin-left: 15px;
+            }
+            &:hover, &:active {
+                background-color: #E68C00;
+            }
+        }
+    }
+    .opener-text-center {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .opener-text-carousel {
+        h1 {
+            font-family: 'PT Sans Narrow', sans-serif;
+            color: white;
+            text-transform: uppercase;
+            font-size: 50px;
+            letter-spacing: 10px;
+            margin-bottom: 30px;
+        }
+        .opener-lead {
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 500;
+            letter-spacing: 5px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: $orange;
+            border-radius: 0;
+            border-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            &:after {
+                content: "\2192";
+                margin-left: 15px;
+            }
+            &:hover, &:active {
+                background-color: #E68C00;
+            }
+        }
+
+    }
+    .opener-text-left {
+        margin-left: 20%;
+        width: 28%;
+        top: 25%;
+    }
+}
+
 

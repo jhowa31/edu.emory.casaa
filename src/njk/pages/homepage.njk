@@ -4,13 +4,27 @@
 {% endblock %} 
 {% block content %}
 <div id="header-gradient"></div>
-<div class="container-fluid" id="main-content" tabindex="-1">
+<div id="main-content" tabindex="-1">
       <!-- The main page content -->
-      <div class="homepage-opener">
+      
+      <!-- Homepage Opener Options -->
+      <div class="container-fluid">
             {% include "partials/homepage-header-options/homepage-opener-full-width-image.njk" %}
             {% include "partials/homepage-header-options/homepage-opener-carousel-full-width-image.njk" %}
             {% include "partials/homepage-header-options/homepage-opener-carousel-small-image.njk" %}
             {% include "partials/homepage-header-options/homepage-opener-abstract-and-image.njk" %}
       </div>
+      
+
+      <!-- Basic Page Content -->
+      <div class="container">
+            <div class="row">
+                  <div class="col-12 col-lg-8 m-auto">
+                        {% include "partials/basic-page-content.njk" %}
+                        {% include "partials/basic-quote.njk" %}
+                  </div>
+            </div>
+      </div>
+      
 </div>
 {% endblock %}
