@@ -2,12 +2,31 @@
 .navbar-campus-life {
     padding-top: 30px;
 }
+.navbar-campus-life.bg-light {
+    background-color: transparent !important;
+}
+.bg-light {
+    background-color: transparent !important;
+}
 .navbar-expand-lg .navbar-nav .nav-link {
     color: white;
     margin-right: 20px;
     font-size: 18px;
     padding-top: 0;
+    @media only screen and (min-width : 992px) and (max-width : 1199px) {
+        margin-right: 14px;
+        font-size: 16px;
+    }
 }
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: white;
+}
+
+
+
+
+
+
 #header-gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
     background: -moz-linear-gradient(top,  rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
