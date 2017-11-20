@@ -4,6 +4,7 @@
 }
 section {
     margin: 80px 0;
+    padding:60px 0
 }
 .table {
     background: $table-background;
@@ -29,4 +30,47 @@ blockquote {
     footer {
         font-size: 22px;
     }
+}
+// Buttons
+.btn {
+    &.btn-orange {
+         color:#fff;
+         background-color:$orange;
+         text-transform:uppercase
+     }
+     &.btn-emory-blue {
+        color:#fff;
+        background-color:$emory-blue;
+        text-transform:uppercase
+    }
+     &.btn-center {
+         display:inline-block;
+         width:100%
+     }
+ }
+
+ // Sections
+.section-title,
+.section-label {
+    display:block;
+}
+.section-label {
+    text-transform:uppercase;
+    margin-bottom:1rem;
+    color:#666
+}
+.section-title {
+    font-family:'RasmusBold';
+    font-size:2rem;
+    color:$emory-blue;
+    margin-bottom:2.5rem
+    
+}
+.section-orange {
+    background:
+        $orange // Fallback
+        url('../images/orange-abstract-quote-slider.jpg') 
+        no-repeat;
+    color:#fff;
+    margin:0 auto;
 }

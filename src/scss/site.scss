@@ -6,8 +6,12 @@
 @import "globals/site-wide";
 
 //Page Element Styles
+@import "elements/tiles";
+@import "elements/testimonial-carousel";
 @import "elements/header";
 @import "elements/featured-content-blocks";
+@import "elements/overlay";
+@import "elements/checklist";
 // @import "elements/footer";
 
 //Widget Styles

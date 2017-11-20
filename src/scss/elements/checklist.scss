@@ -1,0 +1,9 @@
+.checklist {
+    margin:0;padding:0;list-style:none;
+    li:before {
+        font-family:'Fontawesome';
+        content:'\f00c';
+        color:$orange;
+        margin-right:15px
+    }
+}
