@@ -1,0 +1,38 @@
+.block-row {
+    display:flex;
+    flex-flow:column nowrap;
+    .block {
+        padding:60px;
+        background-color:$grey; // Default
+        display:flex;
+        flex-flow:column nowrap;
+        justify-content:center;
+        .block__title {
+            text-align:left;
+            font-size:1.5rem;
+        }
+    
+        // Colors
+        &.block-emory-blue,
+        &.block-medium-blue {
+            color:#fff;
+            .block__title {color:#fff}
+        }
+        &.block-emory-blue {background-color:$emory-blue}
+        &.block-medium-blue {background-color:$medium-blue}
+        &.block-orange {background-color:$orange}
+        &.block-grey {background-color:$grey}
+        
+    }
+}
+
+
+@media (min-width:768px) {
+    .block-row {flex-flow:row nowrap}
+
+}
+@media (min-width:992px) {
+    .block-row {
+        .block {padding:80px}
+    }
+}

@@ -1,0 +1,65 @@
+.overlay {
+    a,ul,ol,li,.overlay__title {color:#fff}
+    color:#fff;
+    background-color:$emory-blue; // Default
+    position:relative;
+    overflow:hidden;
+    margin:0 auto;
+    .overlay-img {
+        position:absolute;
+        top:0;left:0;
+        object-fit:cover;
+        object-position:center;
+        width:100%;
+        opacity:.2
+    }
+    .overlay__title {
+        font-size:2rem;
+        letter-spacing:initial;
+        font-family:'RasmusBold', 'Times New Roman', Times, serif;
+        position:relative;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 5px;
+            border-bottom:2px solid $orange
+        }
+    }
+    .lead {font-size:1rem;line-height:1.5rem}
+    a {
+        text-decoration:underline;
+        &:hover {text-decoration:none}
+    }
+
+    // Overlay color EMORY BLUE
+    &.overlay-emory-blue {background-color:$emory-blue}
+    // Overlay color MEDIUM BLUE
+    &.overlay-medium-blue {background-color:$medium-blue}
+    // Overlay color GREY
+    &.overlay-grey {
+        background-color:$grey;
+        a,ul,ol,li,.overlay__title {color:initial}
+        color:initial;
+    }
+    
+    // Text alignment LEFT
+    &.text-left {
+        text-align:left;
+        .overlay__title,
+        ul,ol,li,a,p {text-align:left}
+    }
+    // Text alignment CENTER
+    &.text-center {
+        text-align:center;
+        .overlay__title,
+        ul,ol,li,a,p {text-align:center}
+    }
+    // Text RIGHT
+    &.text-right {
+        text-align:right;
+        .overlay__title,
+        ul,ol,li,a,p {text-align:right}
+    }
+}

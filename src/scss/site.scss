@@ -6,9 +6,18 @@
 @import "globals/site-wide";
 
 //Page Element Styles
+@import "elements/block";
+@import "elements/tiles";
+@import "elements/testimonial-carousel";
 @import "elements/header";
 @import "elements/featured-content-blocks";
+<<<<<<< HEAD
 @import "elements/footer";
+=======
+@import "elements/overlay";
+@import "elements/checklist";
+// @import "elements/footer";
+>>>>>>> de5e65706c27c958f959cba6e2d470fffeaf115e
 
 //Widget Styles
 // @import "widgets/interior-article-grid";

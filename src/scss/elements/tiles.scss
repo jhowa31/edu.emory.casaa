@@ -1,0 +1,39 @@
+.tiles {
+    background-color:$grey;
+    margin:0 auto;
+    a {color:initial}
+    a:hover {text-decoration:none}
+    .tiles__item {
+        background-color:#fff;
+        border:1px solid #eee;
+        transition:all .3s ease;
+        margin-bottom:30px;
+        &:hover {box-shadow:0 0 30px #999;}
+    }
+    .tiles__thumbnail {
+        overflow:hidden;
+        img {
+            object-fit:cover;
+            width:100%;
+        }
+    }
+    .tiles__textarea {
+        padding:30px 30px 15px 30px;
+    }
+    .tiles__headline {
+        font-size:1.5rem;
+        text-align:left;
+        margin-bottom:1rem
+    }
+    .tiles__more {
+        display:block;
+        text-align:right;
+        font-size:1.25rem
+    }
+}
+
+@media (min-width:992px) {
+    .tiles {
+        .tiles__item {margin-bottom:0}
+    }
+}
