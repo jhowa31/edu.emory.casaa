@@ -38,6 +38,9 @@ hr.divider {
     display:inline-block;
 }
 
+// Owl Carousel
+.owl-carousel {list-style:none}
+
 // Buttons
 button {
     &:hover {cursor:pointer}
@@ -88,12 +91,25 @@ button {
     color:$emory-blue;
     margin-bottom:2.5rem
 }
+.section-orange,
+.section-grey,
+.section-emory-blue,
+.section-medium-blue {margin:0 auto}
+
+.section-emory-blue,
+.section-medium-blue {
+    color:#fff;
+    .section-title {color:#fff}
+    .section-label {color:rgba(255,255,255,.5)}
+}
+
 .section-orange {
     background:
         $orange // Fallback
         url('../images/orange-abstract-quote-slider.jpg') 
         no-repeat;
-    color:#fff;
-    margin:0 auto;
+    color:#fff
 }
-.section-grey {background-color:$grey;margin:0 auto}
+.section-grey {background-color:$grey}
+.section-emory-blue {background-color:$emory-blue}
+.section-medium-blue {background-color:$medium-blue}
