@@ -31,17 +31,27 @@ blockquote {
         font-size: 22px;
     }
 }
+hr.divider {
+    width:50px;
+    color:$orange;
+    border:2px solid $orange;
+    display:inline-block;
+}
+
 // Buttons
 .btn {
+    text-transform:uppercase;
     &.btn-orange {
          color:#fff;
-         background-color:$orange;
-         text-transform:uppercase
+         background-color:$orange
      }
      &.btn-emory-blue {
         color:#fff;
-        background-color:$emory-blue;
-        text-transform:uppercase
+        background-color:$emory-blue
+    }
+    &.btn-white {
+        background-color:#fff;
+        color:#333;
     }
      &.btn-center {
          display:inline-block;
@@ -64,7 +74,6 @@ blockquote {
     font-size:2rem;
     color:$emory-blue;
     margin-bottom:2.5rem
-    
 }
 .section-orange {
     background:
@@ -74,3 +83,4 @@ blockquote {
     color:#fff;
     margin:0 auto;
 }
+.section-grey {background-color:$grey;margin:0 auto}

@@ -46,3 +46,10 @@ p {
     column-count: 2;
 }
 
+// Headings
+.heading-group {
+    text-align:left;
+    margin-bottom:0;
+    ~ hr.divider {margin-top:0}
+}
+
