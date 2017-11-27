@@ -6,18 +6,23 @@
 @import "globals/site-wide";
 
 //Page Element Styles
-@import "elements/block";
+@import "elements/overlay";
 @import "elements/bio";
+@import "elements/block";
+@import "elements/people";
 @import "elements/card";
 @import "elements/cta";
+@import "elements/contact";
+@import "elements/events";
 @import "elements/tiles";
 @import "elements/timeline";
 @import "elements/testimonial-carousel";
 @import "elements/twoColumn-carousel";
 @import "elements/header";
+@import "elements/staff";
 @import "elements/featured-content-blocks";
-@import "elements/overlay";
-@import "elements/checklist";
+
+@import "elements/list";
 @import "elements/fact";
 // @import "elements/footer";
 

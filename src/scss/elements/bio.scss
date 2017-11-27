@@ -1,46 +1,5 @@
 .bio {
-    .bio__item {
-        background-color:$grey;
-        display:flex;
-        flex-flow:column nowrap;
-        text-align:center;
-        margin-bottom:30px
-    }
-    .bio__img {
-        background-color:$emory-blue;
-        width:100%;
-        padding:15px;
-        position:relative
-    }
-    .bio__textarea {
-        padding:30px;
-    }
-    .bio__name {
-        font-family:'RasmusBold', 'Times New Roman', serif;
-        font-size:1.75rem;
-        letter-spacing:initial;
-        color:$medium-blue;
-    }
-    .bio__title {font-weight:bold}
-}
-@media (min-width:768px) {
-    .bio {
-        .bio__img {
-            height:125px;
-            margin-bottom:65px;
-            padding:0;
-            .bio__thumbnail {
-                border:2px solid rgba(255,255,255,.5);
-                position:absolute;
-                bottom:-50px;
-                left:50%;
-                transform:translateX(-50%);
-            }
-        }
-    }
-}
-@media (min-width:992px) {
-    .bio {
-        .bio__item {margin-bottom:0}
+    .section-title {
+        margin-bottom:0
     }
 }

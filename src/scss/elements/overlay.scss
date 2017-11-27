@@ -43,6 +43,11 @@
         a,ul,ol,li,.overlay__title {color:initial}
         color:initial;
     }
+    // Overlay color BLACK
+    &.overlay-black {
+        background-color:#000;
+        .overlay-img {opacity:.5}
+    }
     
     // Text alignment LEFT
     &.text-left {

@@ -1,7 +1,6 @@
-.blocks {margin:0 auto;padding:0}
-.block-row {
-    display:flex;
-    flex-flow:column nowrap;
+.blocks {
+    margin:0 auto;padding:0;
+
     .block {
         padding:60px;
         background-color:$grey; // Default
@@ -12,20 +11,29 @@
             text-align:left;
             font-size:1.5rem;
         }
+        .btn {text-align:left}
     
         // Colors
         &.block-emory-blue,
         &.block-medium-blue {
             color:#fff;
-            .block__title {color:#fff}
+            a,
+            .block__title,
+            .btn {color:#fff}
         }
-        &.block-emory-blue {background-color:$emory-blue}
+        &.block-emory-blue{background-color:$emory-blue}
         &.block-medium-blue {background-color:$medium-blue}
-        &.block-orange {background-color:$orange}
+        &.block-orange {
+            background-color:$orange;
+            a,.btn {color:#fff}
+        }
         &.block-grey {background-color:$grey}
         
     }
 }
+
+    
+
 
 
 @media (min-width:768px) {

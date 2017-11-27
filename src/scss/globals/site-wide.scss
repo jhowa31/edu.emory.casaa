@@ -39,6 +39,9 @@ hr.divider {
 }
 
 // Buttons
+button {
+    &:hover {cursor:pointer}
+}
 .btn {
     text-transform:uppercase;
     &.btn-orange {
@@ -54,15 +57,25 @@ hr.divider {
         color:#333;
     }
      &.btn-center {
-         display:inline-block;
-         width:100%
-     }
+        display:inline-block;
+        width:100%
+    }
+    &.btn-arrow {
+        padding:0;margin:0;
+        background-color:transparent;
+        &:after {
+            font-family:'FontAwesome';
+            content:'\f061';
+            margin-left:15px
+        }
+    }
  }
 
  // Sections
 .section-title,
 .section-label {
     display:block;
+    letter-spacing:initial
 }
 .section-label {
     text-transform:uppercase;

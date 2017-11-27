@@ -1,0 +1,17 @@
+.icon-list {
+    list-style:none;
+    margin:0 auto;padding:0;
+    address {display:inline}
+    a {
+        color:$medium-blue;
+        display:block;
+        padding:8px;
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration:none;
+            background-color:$grey;
+        }
+    }
+    .fa {min-width:20px}
+}
