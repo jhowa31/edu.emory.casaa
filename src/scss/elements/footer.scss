@@ -7,3 +7,30 @@ footer {
         margin: auto;
     }
 }
+
+#footer {
+    background-image:url('../images/footer-abstract.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    a {color:#fff}
+    .footer-main {padding:90px 0}
+    .footer__logo {max-width:300px;margin-bottom:15px}
+    .post-footer {
+        background-color:#0C1658;
+        padding:15px 0;
+        text-align:center
+    }
+    // Lists
+    .list {
+        .fa {color:$orange;background-color:transparent;width:auto;height:auto}
+        a {
+            &:hover,
+            &:active,
+            &:focus {
+                background-color:initial;
+                text-decoration:underline
+            }
+        }
+        &.list-iconlist a {display:inline-block}
+    }
+}
