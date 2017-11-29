@@ -11,22 +11,23 @@
             text-align:left;
             font-size:1.5rem;
         }
-        .btn {text-align:left}
+        .btn {
+            text-align:left;
+            color:$emory-blue
+        }
     
         // Colors
         &.block-emory-blue,
-        &.block-medium-blue {
+        &.block-medium-blue,
+        &.block-orange {
             color:#fff;
             a,
             .block__title,
             .btn {color:#fff}
         }
         &.block-emory-blue{background-color:$emory-blue}
-        &.block-medium-blue {background-color:$medium-blue}
-        &.block-orange {
-            background-color:$orange;
-            a,.btn {color:#fff}
-        }
+        &.block-medium-blue {background-color:$medium-blue-wcag}
+        &.block-orange {background-color:$orange-wcag}
         &.block-grey {background-color:$grey}
         
     }

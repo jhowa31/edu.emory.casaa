@@ -37,6 +37,11 @@ hr.divider {
     border:2px solid $orange;
     display:inline-block;
 }
+table td a {
+    color:$link-color-dark;
+    text-decoration:underline
+}
+a {color: $link-color}
 
 // Owl Carousel
 .owl-carousel {list-style:none}
@@ -47,17 +52,18 @@ button {
 }
 .btn {
     text-transform:uppercase;
-    &.btn-orange {
-         color:#fff;
-         background-color:$orange
-     }
-     &.btn-emory-blue {
+    &.btn-primary {
+        background-color: $emory-blue;
+        border-color: $emory-blue
+    }
+    &.btn-secondary {
         color:#fff;
-        background-color:$emory-blue
+        background-color:$orange-wcag;
+        border-color:$orange-wcag
     }
     &.btn-white {
         background-color:#fff;
-        color:#333;
+        color:#333
     }
      &.btn-center {
         display:inline-block;
@@ -113,3 +119,13 @@ button {
 .section-grey {background-color:$grey}
 .section-emory-blue {background-color:$emory-blue}
 .section-medium-blue {background-color:$medium-blue}
+
+// Figure
+figcaption {
+    .figure-label {}
+    .figure-title {
+        font-family:'RasmusBold', 'Times New Roman', serif;
+        font-size:1.25rem;
+        color:$emory-blue
+    }
+}

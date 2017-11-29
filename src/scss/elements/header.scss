@@ -133,7 +133,6 @@
             margin-bottom: 20px;
         }
         .btn-primary {
-            background-color: $orange;
             border-radius: 0;
             border-color: transparent;
             text-transform: uppercase;
@@ -141,9 +140,6 @@
             &:after {
                 content: "\2192";
                 margin-left: 15px;
-            }
-            &:hover, &:active {
-                background-color: #E68C00;
             }
         }
     }
@@ -171,7 +167,6 @@
             margin-bottom: 20px;
         }
         .btn-primary {
-            background-color: $orange;
             border-radius: 0;
             border-color: transparent;
             text-transform: uppercase;
@@ -179,9 +174,6 @@
             &:after {
                 content: "\2192";
                 margin-left: 15px;
-            }
-            &:hover, &:active {
-                background-color: #E68C00;
             }
         }
 
