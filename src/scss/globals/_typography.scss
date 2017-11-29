@@ -53,3 +53,18 @@ p {
     ~ hr.divider {margin-top:0}
 }
 
+/*
+ * WYSIWYG content
+ * When type is inside a .wysiwyg class, use these styles
+*/
+.wysiwyg {
+    align-text:left;
+    h1,h2,h3,h4,h5,h6,p,ol,ul,blockquote {text-align:left}
+    h1,h2,h3,h4,h5,h6 {margin-bottom:30px}
+    h1,h3,h5 {font-family:'RasmusBold', 'Times New Roman', serif}
+    h2,h4,h6 {font-family:'Work Sans', 'Arial', 'Helvetica', sans-serif;letter-spacing:initial}
+    h2 {font-size:2.25rem}
+    h3 {font-size:2rem}
+    h4 {font-size:1.75rem}
+    h6 {text-transform:uppercase}
+}
