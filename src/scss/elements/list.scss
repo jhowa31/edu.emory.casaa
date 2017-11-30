@@ -49,5 +49,12 @@
             margin-right:5px;
         }
     }
+    &:before{
+        content:attr(aria-label);
+        font-size:1.15rem;
+        margin-bottom:15px;
+        font-weight:bold;
+        display:block;
+    }
 
 }
