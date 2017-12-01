@@ -1,8 +1,7 @@
 .cta {
     margin:0 auto;
     padding:0;
-    color:#fff;
-    a {color:#fff}
+    
     .cta__action,
     .cta__quicklinks {
         padding:60px 30px;
@@ -13,10 +12,12 @@
     }
     .cta__action {
         text-align:center;
-        background-color:$orange-wcag
+        background-color:$orange
     }
     .cta__quicklinks {
-        background-color:$medium-blue-wcag
+        background-color:$medium-blue-wcag;
+        color:#fff;
+        a {color:#fff}
     }
     .cta__heading-action {
         font-size:2rem;

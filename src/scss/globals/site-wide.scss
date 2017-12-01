@@ -3,10 +3,6 @@ body {overflow-x:hidden}
     padding-right: 0;
     padding-left: 0;
 }
-section {
-    margin: 80px 0;
-    padding:60px 0
-}
 .row-spacer {margin:30px auto}
 .table {
     background: $table-background;
@@ -59,9 +55,9 @@ button {
         border-color: $emory-blue
     }
     &.btn-secondary {
-        color:#fff;
-        background-color:$orange-wcag;
-        border-color:$orange-wcag
+        color:#333;
+        background-color:$orange;
+        border-color:$orange
     }
     &.btn-white {
         background-color:#fff;
@@ -80,9 +76,11 @@ button {
             margin-left:15px
         }
     }
+    &:hover {filter:brightness(1.25)}
  }
 
- // Sections
+// Sections
+.section {padding:90px 0}
 .section-title,
 .section-label {
     display:block;
@@ -99,12 +97,6 @@ button {
     color:$emory-blue;
     margin-bottom:2.5rem
 }
-.section-orange,
-.section-grey,
-.section-white,
-.section-emory-blue,
-.section-medium-blue {margin:0 auto}
-
 .section-emory-blue,
 .section-medium-blue {
     color:#fff;
