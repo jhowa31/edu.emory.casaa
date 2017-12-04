@@ -5,44 +5,43 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
- // IMPORT PATH: ../_libraries/bootstrap-4.0.0-beta/scss/bootstrap.scss
+// IMPORT PATH: ../_libraries/bootstrap-4.0.0-beta/scss/bootstrap.scss
 
- @import "../_libraries/bootstrap-4.0.0-beta/scss/functions";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/variables";
- 
- // LOCAL SITE VARIABLES
- @import "globals/bootstrap-4.0.0-variables";
- 
- @import "../_libraries/bootstrap-4.0.0-beta/scss/mixins";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/print";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/reboot";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/type";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/images";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/code";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/grid";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/tables";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/forms";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/buttons";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/transitions";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/dropdown";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/button-group";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/input-group";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/custom-forms";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/nav";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/navbar";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/card";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/breadcrumb";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/pagination";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/badge";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/jumbotron";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/alert";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/progress";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/media";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/list-group";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/close";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/modal";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/tooltip";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/popover";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/carousel";
- @import "../_libraries/bootstrap-4.0.0-beta/scss/utilities";
- 
+@import "../_libraries/bootstrap-4.0.0-beta/scss/functions";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/variables";
+
+// LOCAL SITE VARIABLES
+@import "globals/bootstrap-4.0.0-variables";
+
+@import "../_libraries/bootstrap-4.0.0-beta/scss/mixins";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/print";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/reboot";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/type";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/images";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/code";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/grid";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/tables";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/forms";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/buttons";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/transitions";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/dropdown";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/button-group";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/input-group";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/custom-forms";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/nav";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/navbar";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/card";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/breadcrumb";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/pagination";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/badge";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/jumbotron";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/alert";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/progress";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/media";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/list-group";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/close";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/modal";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/tooltip";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/popover";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/carousel";
+@import "../_libraries/bootstrap-4.0.0-beta/scss/utilities";

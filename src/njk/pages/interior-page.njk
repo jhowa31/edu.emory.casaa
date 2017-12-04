@@ -3,8 +3,18 @@
 <title>Interior Page | {{ siteName }}</title>
 {% endblock %} 
 {% block content %}
-<div class="container" id="main-content" tabindex="-1">
-      <!-- The main page content -->
-      
-</div>
+<div id="header-gradient" role="presentation"></div>
+<main id="main-content" role="main">
+    <section class="section"></section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10">
+                {% include "partials/bio.njk" %}
+            </div><!-- .col-lg-10 -->
+            <div class="col-lg-2">
+                {% include "partials/sidebar-nav.njk" %}
+            </div><!-- .col-lg-2 -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</main>
 {% endblock %}
