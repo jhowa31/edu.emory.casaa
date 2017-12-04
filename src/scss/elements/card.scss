@@ -1,23 +1,25 @@
 .card {
-    background-color:$grey;
-    border:none;
-    margin-bottom:30px;
+    background-color: $grey;
+    border: none;
+    margin-bottom: 30px;
     .card-header {
-        background-color:#fff;
+        background-color: #fff;
         a {
-            position:relative;
-            width:100%;
-            display:block;
-            color:$link-color;
+            position: relative;
+            width: 100%;
+            display: block;
+            color: $link-color;
             &:after {
-                font-family:'Fontawesome';
-                content:'\f067';
-                position:absolute;
-                right:0;
+                font-family: 'Fontawesome';
+                content: '\f067';
+                position: absolute;
+                right: 0;
             }
             &.collapsed {
-                color:#333;
-                &:after {content:'\f068'}
+                color: #333;
+                &:after {
+                    content: '\f068'
+                }
             }
         }
     }

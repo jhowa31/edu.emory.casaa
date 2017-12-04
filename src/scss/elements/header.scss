@@ -8,11 +8,12 @@
     margin-right: 20px;
     font-size: 18px;
     padding-top: 0;
-    @media only screen and (min-width : 992px) and (max-width : 1199px) {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
         margin-right: 14px;
         font-size: 16px;
     }
 }
+
 .navbar-nav .nav-link.active {
     color: white;
 }
@@ -20,6 +21,7 @@
 .nav-link {
     color: white !important;
 }
+
 .active .nav-link {
     border-bottom: 1px solid white;
 }
@@ -27,60 +29,65 @@
 .navbar-toggler {
     background: white;
 }
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(124,124,124, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
 .navbar-campus-life {
-    @media only screen and (max-width : 991px) {
-        background-color: rgb(26,31,44) !important;
-        background-color: rgba(26,31,44,.8) !important;
+    @media only screen and (max-width: 991px) {
+        background-color: rgb(26, 31, 44) !important;
+        background-color: rgba(26, 31, 44, .8) !important;
     }
     .navbar-brand {
         img {
-            @media only screen and (min-width : 480px) and (max-width : 991px) {
+            @media only screen and (min-width: 480px) and (max-width: 991px) {
                 max-width: 330px;
             }
-            @media only screen and (min-width : 320px) and (max-width : 479px) {
+            @media only screen and (min-width: 320px) and (max-width: 479px) {
                 max-width: 216px;
             }
         }
-        
     }
 }
 
-
-
-
 #header-gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
     height: 122px;
     width: 100%;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 4;
 }
 
 .scrolling {
-    background-color: rgb(26,31,44) !important;
-    background-color: rgba(26,31,44,.8) !important;
+    background-color: rgb(26, 31, 44) !important;
+    background-color: rgba(26, 31, 44, .8) !important;
     padding-top: 30px;
     padding-bottom: 10px;
 }
 
 // HOMEPAGE OPENER
-.homepage-opener-full-width-image, .homepage-opener-abstract-image, .homepage-opener-abstract-small-image, .homepage-opener-small-image-header {
+.homepage-opener-full-width-image,
+.homepage-opener-abstract-image,
+.homepage-opener-abstract-small-image,
+.homepage-opener-small-image-header {
     width: 100%;
     height: 100%;
     object-fit: cover;
     max-height: 1000px;
     margin: auto;
 }
+
 #homepage-opener-carousel-full-width {
     img {
         width: 100%;
@@ -90,6 +97,7 @@
         margin: auto;
     }
 }
+
 #homepage-opener-carousel-small-image {
     position: relative;
     margin-top: -102%;
@@ -100,16 +108,17 @@
         max-height: 1000px;
         margin: auto;
     }
-    @media only screen and (min-width : 1500px) {
+    @media only screen and (min-width: 1500px) {
         margin-top: -102%;
     }
-    @media only screen and (min-width : 1300px) and (max-width : 1499px) {
+    @media only screen and (min-width: 1300px) and (max-width: 1499px) {
         margin-top: -95%;
     }
-    @media only screen and (min-width : 320px) and (max-width : 1299px) {
+    @media only screen and (min-width: 320px) and (max-width: 1299px) {
         margin-top: -89%;
     }
 }
+
 .homepage-opener {
     position: relative;
     .opener-text {
@@ -176,7 +185,6 @@
                 margin-left: 15px;
             }
         }
-
     }
     .opener-text-left {
         margin-left: 20%;
@@ -184,5 +192,3 @@
         top: 25%;
     }
 }
-
-

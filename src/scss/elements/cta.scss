@@ -1,40 +1,45 @@
 .cta {
-    margin:0 auto;
-    padding:0;
-    
+    margin: 0 auto;
+    padding: 0;
     .cta__action,
     .cta__quicklinks {
-        padding:60px 30px;
-        display:flex;
-        flex-flow:column nowrap;
-        justify-content:center;
-        align-items:center;
+        padding: 60px 30px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
     }
     .cta__action {
-        text-align:center;
-        background-color:$orange
+        text-align: center;
+        background-color: $orange
     }
     .cta__quicklinks {
-        background-color:$medium-blue-wcag;
-        color:#fff;
-        a {color:#fff}
+        background-color: $medium-blue-wcag;
+        color: #fff;
+        a {
+            color: #fff
+        }
     }
     .cta__heading-action {
-        font-size:2rem;
-        font-family:'ConduitRegular';
-        letter-spacing:initial;
-        text-transform:uppercase;
+        font-size: 2rem;
+        font-family: 'ConduitRegular';
+        letter-spacing: initial;
+        text-transform: uppercase;
     }
     .cta__heading-quicklinks {
-        font-size:1.25rem;
-        font-family:'RasmusBold', 'Times New Roman', serif;
-        text-align:left;
-        color:#fff;
+        font-size: 1.25rem;
+        font-family: 'RasmusBold', 'Times New Roman', serif;
+        text-align: left;
+        color: #fff;
     }
 }
+
 @media (min-width:992px) {
     .cta {
         .cta__action,
-        .cta__quicklinks {min-height:450px;padding:0;}
+        .cta__quicklinks {
+            min-height: 450px;
+            padding: 0;
+        }
     }
 }

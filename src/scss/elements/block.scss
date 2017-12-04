@@ -1,46 +1,54 @@
 .blocks {
-    margin:0 auto;padding:0;
-
+    margin: 0 auto;
+    padding: 0;
     .block {
-        padding:60px;
-        background-color:$grey; // Default
-        display:flex;
-        flex-flow:column nowrap;
-        justify-content:center;
+        padding: 60px;
+        background-color: $grey; // Default
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
         .block__title {
-            text-align:left;
-            font-size:1.5rem;
+            text-align: left;
+            font-size: 1.5rem;
         }
         .btn {
-            text-align:left;
-            color:$emory-blue
-        }
-    
-        // Colors
+            text-align: left;
+            color: $emory-blue
+        } // Colors
         &.block-emory-blue,
         &.block-medium-blue {
-            color:#fff;
+            color: #fff;
             a,
             .block__title,
-            .btn {color:#fff}
+            .btn {
+                color: #fff
+            }
         }
-        &.block-emory-blue{background-color:$emory-blue}
-        &.block-medium-blue {background-color:$medium-blue-wcag}
-        &.block-orange {background-color:$orange}
-        &.block-grey {background-color:$grey}
-        
+        &.block-emory-blue {
+            background-color: $emory-blue
+        }
+        &.block-medium-blue {
+            background-color: $medium-blue-wcag
+        }
+        &.block-orange {
+            background-color: $orange
+        }
+        &.block-grey {
+            background-color: $grey
+        }
     }
 }
 
-    
-
-
-
 @media (min-width:768px) {
-    .block-row {flex-flow:row nowrap}
+    .block-row {
+        flex-flow: row nowrap
+    }
 }
+
 @media (min-width:992px) {
     .block-row {
-        .block {padding:80px}
+        .block {
+            padding: 80px
+        }
     }
 }

@@ -1,9 +1,13 @@
 .staff {
-    text-align:center;
-    .staff__item {margin-bottom:45px}
-    .staff__name {
-        font-size:1.15rem;
-        margin:15px auto 0 auto;
+    text-align: center;
+    .staff__item {
+        margin-bottom: 45px
     }
-    .staff__title {color:$orange-wcag}
+    .staff__name {
+        font-size: 1.15rem;
+        margin: 15px auto 0 auto;
+    }
+    .staff__title {
+        color: $orange-wcag
+    }
 }

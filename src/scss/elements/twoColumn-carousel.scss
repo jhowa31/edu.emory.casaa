@@ -1,32 +1,41 @@
 .twoColumn-carousel {
-    list-style:none;
-    img {max-width:350px;max-height:197px}
+    list-style: none;
+    img {
+        max-width: 350px;
+        max-height: 197px
+    }
     .twoColumn-carousel__title {
-        text-align:left;
-        font-size:2.25rem;
-        margin-top:30px
+        text-align: left;
+        font-size: 2.25rem;
+        margin-top: 30px
     }
     .owl-dots {
-        margin-top:60px;
-        display:flex;
-        justify-content:center;align-items:center;
-        height:15px;
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15px;
         .owl-dot {
-            background: none repeat scroll 0 0 rgba(9,30,121,.5);
+            background: none repeat scroll 0 0 rgba(9, 30, 121, .5);
             border-radius: 20px;
             display: block;
-            width: 8px;height: 8px;
+            width: 8px;
+            height: 8px;
             margin: 5px 7px;
-            transition:all .3s ease;
+            transition: all .3s ease;
             &.active {
                 background: none repeat scroll 0 0 $emory-blue;
-                width:12px;height:12px;
+                width: 12px;
+                height: 12px;
             }
         }
     }
 }
+
 @media (min-width:992px) {
     .twoColumn-carousel {
-        .twoColumn-carousel__title {margin-top:0}
+        .twoColumn-carousel__title {
+            margin-top: 0
+        }
     }
 }

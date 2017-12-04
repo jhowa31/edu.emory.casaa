@@ -1,8 +1,8 @@
 .testimonial-carousel {
-    margin:30px auto 60px auto;
-    list-style:none;
+    margin: 30px auto 60px auto;
+    list-style: none;
     .testimonial-carousel__item {
-        position:relative;
+        position: relative;
         &:after {
             top: 100%;
             left: 50%;
@@ -19,62 +19,69 @@
         }
     }
     .testimonial-carousel__thumbnail {
-        width:100px;height:100px;
-        border-radius:50%;
-        border:1px solid #666;
-        box-shadow:0 0 5px rgba(0,0,0,.5);
-        overflow:hidden;
-        position:absolute;
-        top:-50px;
-        right:30px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid #666;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+        overflow: hidden;
+        position: absolute;
+        top: -50px;
+        right: 30px;
     }
     .testimonial-carousel__textarea {
-        background:#fff;
-        color:initial;
-        margin-top:50px;
-        padding:30px 60px;
+        background: #fff;
+        color: initial;
+        margin-top: 50px;
+        padding: 30px 60px;
     }
     .testimonial-carousel__person,
-    .testimonial-carousel__title {margin-bottom:.5rem}
+    .testimonial-carousel__title {
+        margin-bottom: .5rem
+    }
     .testimonial-carousel__person {
-        text-align:left;
-        font-size:1.5rem;
-        font-weighT:bold;
-        font-family:'Work Sans', 'Arial', sans-serif;
+        text-align: left;
+        font-size: 1.5rem;
+        font-weighT: bold;
+        font-family: 'Work Sans', 'Arial', sans-serif;
     }
     .testimonial-carousel__title {
-        color:$orange-wcag;
-        text-transform:uppercase;
+        color: $orange-wcag;
+        text-transform: uppercase;
     }
     .testimonial-carousel__arrow {
-        width:0;height:0;
-        margin-left:60px; 
+        width: 0;
+        height: 0;
+        margin-left: 60px;
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
         border-top: 20px solid #fff;
     }
     blockquote {
-        font-size:1rem;
-        font-style:normal;
-        font-family:'Work Sans', 'Arial', sans-serif;
-        text-align:left;
+        font-size: 1rem;
+        font-style: normal;
+        font-family: 'Work Sans', 'Arial', sans-serif;
+        text-align: left;
     }
     .owl-dots {
-        margin-top:15px;
-        display:flex;
-        justify-content:center;align-items:center;
-        height:15px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15px;
         .owl-dot {
-            background: none repeat scroll 0 0 rgba(255,255,255,.5);
+            background: none repeat scroll 0 0 rgba(255, 255, 255, .5);
             border-radius: 20px;
             display: block;
-            width: 8px;height: 8px;
+            width: 8px;
+            height: 8px;
             margin: 5px 7px;
-            transition:all .3s ease;
+            transition: all .3s ease;
             &.active {
-                background: none repeat scroll 0 0 rgba(255,255,255,1);
-                width:12px;height:12px;
+                background: none repeat scroll 0 0 rgba(255, 255, 255, 1);
+                width: 12px;
+                height: 12px;
             }
         }
-    } 
+    }
 }

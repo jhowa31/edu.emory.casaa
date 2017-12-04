@@ -1,60 +1,82 @@
 .list {
-    margin:0;padding:0;list-style:none;
-    address {display:inline}
-    li:not(:last-child) {margin-bottom:10px}
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    address {
+        display: inline
+    }
+    li:not(:last-child) {
+        margin-bottom: 10px
+    }
     li:before {
-        font-family:'Fontawesome';
-        color:$orange;
-        margin-right:15px
+        font-family: 'Fontawesome';
+        color: $orange;
+        margin-right: 15px
     }
     a {
-        text-decoration:none;
+        text-decoration: none;
         &:hover,
         &:focus,
-        &:active {text-decoration:underline}
+        &:active {
+            text-decoration: underline
+        }
     }
     &.list-checklist {
-        li:before {content:'\f00c'}
+        li:before {
+            content: '\f00c'
+        }
     }
     &.list-quicklinks {
-        li:before {content:'\f054'}
+        li:before {
+            content: '\f054'
+        }
     }
     &.list-iconlist,
     &.list-horizontal {
         a {
-            display:block;
-            padding:8px;
+            display: block;
+            padding: 8px;
             &:hover,
             &:active,
             &:focus {
-                text-decoration:none;
-                background-color:$grey;
+                text-decoration: none;
+                background-color: $grey;
             }
         }
     }
     &.list-iconlist {
-        li {margin-bottom:0}
-        a {color:$link-color}
-        .fa {min-width:20px}
-    }
-    &.list-horizontal {
-        li {display:inline-block}
-        a {color:$emory-blue}
+        li {
+            margin-bottom: 0
+        }
+        a {
+            color: $link-color
+        }
         .fa {
-            background-color:$emory-blue;
-            color:#fff;
-            text-align:center;
-            line-height:30px;
-            width:30px;height:30px;
-            margin-right:5px;
+            min-width: 20px
         }
     }
-    &:before{
-        content:attr(aria-label);
-        font-size:1.15rem;
-        margin-bottom:15px;
-        font-weight:bold;
-        display:block;
+    &.list-horizontal {
+        li {
+            display: inline-block
+        }
+        a {
+            color: $emory-blue
+        }
+        .fa {
+            background-color: $emory-blue;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
     }
-
+    &:before {
+        content: attr(aria-label);
+        font-size: 1.15rem;
+        margin-bottom: 15px;
+        font-weight: bold;
+        display: block;
+    }
 }

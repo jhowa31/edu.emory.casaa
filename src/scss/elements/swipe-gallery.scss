@@ -1,18 +1,27 @@
 .swiper-container {
-    overflow:visible; // Allows caption to display
-    margin-bottom:90px // Makes up for negative alignment on figcaption
+    overflow: visible; // Allows caption to display
+    margin-bottom: 90px // Makes up for negative alignment on figcaption
 }
+
 .swiper-slide {
-    width:800px;
-    height:450px;
-    position:relative;
+    width: 800px;
+    height: 450px;
+    position: relative;
     figcaption {
-        text-align:center;
-        position:absolute;
-        z-index:99;
-        bottom:-75px;
-        width:100%;
+        text-align: center;
+        position: absolute;
+        z-index: 99;
+        bottom: -75px;
+        width: 100%;
     }
 }
-.swiper-pagination-bullet {background:#fff;opacity:.5}
-.swiper-pagination-bullet-active {background:#fff;opacity:1}
+
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: .5
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+    opacity: 1
+}
