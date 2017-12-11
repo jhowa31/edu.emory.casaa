@@ -171,13 +171,21 @@ figcaption {
 
 // Breadcrumbs
 .breadcrumb {
-    background-color:transparent;
-    .breadcrumb-item.active {color:#6f777f}
+    background-color: transparent;
+    .breadcrumb-item:not(.active) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 225px;
+    }
+    .breadcrumb-item.active {
+        color: #6f777f
+    }
 }
 
 // Page Tweaks
 .page {
     &.page-interior {
-        margin-top:300px
+        margin-top: 300px
     }
 }
