@@ -168,3 +168,16 @@ figcaption {
         color: $emory-blue
     }
 }
+
+// Breadcrumbs
+.breadcrumb {
+    background-color:transparent;
+    .breadcrumb-item.active {color:#6f777f}
+}
+
+// Page Tweaks
+.page {
+    &.page-interior {
+        margin-top:300px
+    }
+}

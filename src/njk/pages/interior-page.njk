@@ -4,9 +4,10 @@
 {% endblock %} 
 {% block content %}
 <div id="header-gradient" role="presentation"></div>
-<main id="main-content" role="main">
-    <section class="section"></section>
+<main id="main-content" role="main" class="page page-interior">
+
     <div class="container">
+        {% include "partials/snippets/breadcrumbs.njk" %}
         <div class="row">
             <div class="col-lg-10">
                 {% include "partials/bio.njk" %}
