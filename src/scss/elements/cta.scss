@@ -54,13 +54,26 @@
 // IE 10+
 @media all and (-ms-high-contrast: none), 
 (-ms-high-contrast: active) {
-    @media (min-width:868px) {
+    @media (max-width:767px) {
+        .cta {
+            .cta__heading-action,
+            .cta__heading-quicklinks,
+            .list {
+                max-width:50%;
+                margin:0 auto;
+            }
+        }
+        
+    }
+    @media (min-width:768px) {
         .cta {
             .cta__action,
             .cta__quicklinks {
-                &.center {padding:120px 30px 0 30px!important; }
+                &.ms-center {padding:120px 30px 0 30px!important; }
             }
-            .list {width:400px}
+            .list {
+                width:200px;
+            }
         }
         
     }
