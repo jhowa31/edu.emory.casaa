@@ -11,7 +11,8 @@
     }
     .cta__action {
         text-align: center;
-        background-color: $orange
+        background-color: $orange;
+        
     }
     .cta__quicklinks {
         background-color: $medium-blue-wcag;
@@ -28,18 +29,39 @@
     }
     .cta__heading-quicklinks {
         font-size: 1.25rem;
-        font-family: 'RasmusBold', 'Times New Roman', serif;
+        font-family: $serif;
         text-align: left;
         color: #fff;
     }
+    .list {
+        min-width:200px;
+    }
 }
 
-@media (min-width:992px) {
+@media (min-width:768px) {
     .cta {
         .cta__action,
         .cta__quicklinks {
-            min-height: 450px;
-            padding: 0;
+            min-height: 450px; 
         }
+        .cta__heading-quicklinks {
+            min-width:300px;
+        }
+        
     }
 }
+
+// IE 10+
+@media all and (-ms-high-contrast: none), 
+(-ms-high-contrast: active) {
+    @media (min-width:868px) {
+        .cta {
+            .cta__action,
+            .cta__quicklinks {
+                &.center {padding:120px 30px 0 30px!important; }
+            }
+            .list {width:400px}
+        }
+        
+    }
+ }

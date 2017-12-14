@@ -57,9 +57,9 @@
         ol,
         li,
         .overlay__title {
-            color: initial
+            color: $text-color;
         }
-        color:initial;
+        color: $text-color;
     } // Overlay color BLACK
     &.overlay-black {
         background-color: #000;

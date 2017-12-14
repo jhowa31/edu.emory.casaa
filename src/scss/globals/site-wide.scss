@@ -189,3 +189,8 @@ figcaption {
         margin-top: 300px
     }
 }
+
+// bugfixes
+.ms-flex-fix {
+    -ms-flex: none!important;
+}

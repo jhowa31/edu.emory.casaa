@@ -1,13 +1,13 @@
 //Basic Styling
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: $sans-serif;
     font-weight: 300;
-    color: #333333;
+    color: $text-color;
 }
 
 h1,
 h2 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: $sans-serif;
     font-weight: 500;
 }
 
@@ -21,7 +21,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: 'rasmusbold';
+    font-family: $serif;
 }
 
 h2 {
@@ -47,14 +47,14 @@ h4 {
 }
 
 .lead {
-    font-family: 'Work Sans', sans-serif;
+    font-family: $sans-serif;
     font-weight: 500;
     font-size: 22px;
     line-height: 1.75;
 }
 
 p {
-    font-family: 'Work Sans', sans-serif;
+    font-family: $sans-serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 1.75;
@@ -104,12 +104,12 @@ p {
     h1,
     h3,
     h5 {
-        font-family: 'RasmusBold', 'Times New Roman', serif
+        font-family: $serif;
     }
     h2,
     h4,
     h6 {
-        font-family: 'Work Sans', 'Arial', 'Helvetica', sans-serif;
+        font-family: $sans-serif;
         letter-spacing: initial
     }
     h2 {
