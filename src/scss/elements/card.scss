@@ -11,14 +11,14 @@
             color: $link-color;
             &:after {
                 font-family: 'Fontawesome';
-                content: '\f067';
+                content: '\f068';
                 position: absolute;
                 right: 0;
             }
             &.collapsed {
                 color: #333;
                 &:after {
-                    content: '\f068'
+                    content: '\f067'
                 }
             }
         }
