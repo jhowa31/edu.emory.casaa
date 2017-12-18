@@ -10,6 +10,7 @@
         border-color: $grey;
         border-top-color: $emory-blue;
         color: #333;
+        min-height:400px;
         &.current {
             background-color: $emory-blue;
             color: #fff;

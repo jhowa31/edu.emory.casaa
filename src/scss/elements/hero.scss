@@ -7,14 +7,14 @@
     .bg {
         height:95vh;
         width:100%;
+        background-size: cover;
+        background-repeat:no-repeat;
     }
     .bg-abstract-blue {
         background-color:$emory-blue; // Fallback
-        background-image:url('../images/abstract-circles-header.jpg');
     }
     .bg-hero {
         background-color:#666; // Fallback
-        background-size: cover;
         box-shadow:inset 100px 0 200px rgba(9, 30, 121,.75);
     }
     .bg-overlay {
