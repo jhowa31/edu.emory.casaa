@@ -1,0 +1,65 @@
+.hero {
+    position:relative;
+    .row {
+        height:95vh;
+        overflow:hidden;
+    }
+    .bg {
+        height:95vh;
+        width:100%;
+    }
+    .bg-abstract-blue {
+        background-color:$emory-blue; // Fallback
+        background-image:url('../images/abstract-circles-header.jpg');
+    }
+    .bg-hero {
+        background-color:#666; // Fallback
+        background-size: cover;
+        box-shadow:inset 100px 0 200px rgba(9, 30, 121,.75);
+    }
+    .bg-overlay {
+        position:absolute;
+        bottom:0;left:0;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#091e79+2,091e79+100&0+25,0.75+100 */
+        background: -moz-linear-gradient(top, rgba(9,30,121,0) 2%, rgba(9,30,121,0) 25%, rgba(9,30,121,0.75) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(9,30,121,0) 2%,rgba(9,30,121,0) 25%,rgba(9,30,121,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(9,30,121,0) 2%,rgba(9,30,121,0) 25%,rgba(9,30,121,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00091e79', endColorstr='#bf091e79',GradientType=0 ); /* IE6-9 */
+            }
+    .hero__textarea {
+        position:absolute;
+        max-width:100%;
+        top:70%;
+        transform:translateY(-70%);
+    }
+    .hero__title,
+    .hero__lead {
+        text-transform:uppercase
+    }
+    .hero__title {
+        font-family:'PT Sans Narrow', sans-serif;
+        font-size:3rem;
+        text-shadow:0 0 3px $emory-blue;
+        margin-bottom:25px;
+    }
+    .hero__lead {
+        font-family:$sans-serif;
+        font-size:1.75rem;
+        line-height:2.25rem;
+        text-shadow:0 0 1px $emory-blue;
+        max-width:30vh;
+    }
+}
+@media (min-width:768px) {
+    .hero {
+        .hero__title {
+            font-size:6rem;
+            margin-bottom:45px;
+        }
+        .hero__textarea {
+            max-width:55vh;
+            top:60%;
+            transform:translateY(-60%);
+        }
+    }
+}
