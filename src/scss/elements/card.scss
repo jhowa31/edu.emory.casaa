@@ -9,11 +9,14 @@
             width: 100%;
             display: block;
             color: $link-color;
+            padding-right:1.25rem; // To accommodate [+] and [-] icon
             &:after {
                 font-family: 'Fontawesome';
                 content: '\f068';
                 position: absolute;
                 right: 0;
+                top:50%;
+                transform:translateY(-50%);
             }
             &.collapsed {
                 color: #333;
