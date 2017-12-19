@@ -15,8 +15,15 @@ body {
     background: $table-background;
     margin: 40px 0;
 }
+#header #logo {
+    height:75px;
+    max-width:300px;
+}
 
-#footer #logo {max-width:425px}
+#footer #logo {
+    height:75px;
+    max-width:425px;
+}
 
 th {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003396+0,002878+100 */
